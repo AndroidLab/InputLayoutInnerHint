@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.alab.input_layout_inner_hint.TextInputLayout
+        android:id="@+id/simpleTextInputLayout"
+        style="@style/TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Inner hint"
+        app:endIconMode="clear_text"
+        app:helperText="Helper text"
+        app:startIconDrawable="@drawable/baseline_mode_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_input_white_background_unfocused_shape" />
+
+    </com.alab.input_layout_inner_hint.TextInputLayout>
+
+    <com.alab.input_layout_inner_hint.TextInputLayout
+        style="@style/TextInputLayoutDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Inner hint"
+        app:helperText="Helper text">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/materialAutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_input_white_background_unfocused_shape"
+            app:endIconMode="clear_text" />
+
+    </com.alab.input_layout_inner_hint.TextInputLayout>
+
+    <com.alab.input_layout_inner_hint.TextInputLayout
+        style="@style/TextInputLayoutDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Inner hint"
+        app:helperText="Helper text">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/materialAutoCompleteTextViewSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_input_white_background_unfocused_shape"
+            android:inputType="none"
+            app:endIconMode="clear_text" />
+
+    </com.alab.input_layout_inner_hint.TextInputLayout>
+
+</LinearLayout>
